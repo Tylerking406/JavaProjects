@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-// Read user file and print the files content
+// Read user file and print the files content cc
 public class ReadUserFile {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner input = new Scanner(System.in), file;
