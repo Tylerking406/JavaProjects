@@ -7,7 +7,7 @@ Two cards are the same if they have the same shape and colour and pattern i.e. a
 A set of three cards is valid if it consists of (i) three distinct cards, or (ii) three of the same card.
 'Check.java' accepts as input a text file where each line describes a set of cards. The program will determine whether each set is or is not valid.
  */
-//
+//file
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
