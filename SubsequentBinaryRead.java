@@ -17,18 +17,19 @@ public class SubsequentBinaryRead {
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());  //value from user
         String binary = Integer.toBinaryString(n); //111101
-        String[] binaryArr = binary.split("");
-
-        //count ones next to each other
-        int i=0, count=0;
-        while (Integer.parseInt(binaryArr[i]) != 0){
-            count++;
-            i++;
+        String[] binaryArr = binary.split("0");
+        int count=0, temp=0,ans=0;
+        for (int i = 0; i < binaryArr.length ; i++) {
+            String[] subElement = binaryArr[i].split("");
+            count = subElement.length;
+            ans = Math.max(temp,count);
+            temp=ans;
+            count=0;
 
         }
-        System.out.println(count);
-
+        System.out.println(ans);
         bufferedReader.close();
     }
+
 
 }
